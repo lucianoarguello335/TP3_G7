@@ -22,6 +22,11 @@ namespace TP3_G7.Pantallas
 
         private void CmbMetodo_SelectedValueChanged(object sender, EventArgs e)
         {
+            TxtCotaInf.Text = "";
+            TxtCotaSup.Text = "";
+            TxtMedia.Text = "";
+            TxtDesv.Text = "";
+            TxtLambda.Text = "";
             TxtCotaInf.Enabled = false;
             TxtCotaSup.Enabled = false;
             TxtMedia.Enabled = false;
@@ -45,6 +50,22 @@ namespace TP3_G7.Pantallas
                     TxtLambda.Enabled = true;
                     break;
             }
+        }
+
+        private void BtnLimpiar_Click(object sender, EventArgs e)
+        {
+            CmbMetodo.SelectedIndex = -1;
+            TxtCantNums.Text = "";
+            RbInt5.Checked = false;
+            RbInt10.Checked = false;
+            RbInt15.Checked = false;
+            RbInt20.Checked = false;
+            TxtCotaInf.Text = "";
+            TxtCotaSup.Text = "";
+            TxtMedia.Text = "";
+            TxtDesv.Text = "";
+            TxtLambda.Text = "";
+
         }
     }
 }

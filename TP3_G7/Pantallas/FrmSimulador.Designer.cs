@@ -40,21 +40,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TxtCantNums = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.RbInt20 = new System.Windows.Forms.RadioButton();
+            this.RbInt15 = new System.Windows.Forms.RadioButton();
+            this.RbInt10 = new System.Windows.Forms.RadioButton();
+            this.RbInt5 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.TxtCotaSup = new System.Windows.Forms.TextBox();
-            this.TxtCotaInf = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.TxtMedia = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.TxtDesv = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.TxtLambda = new System.Windows.Forms.TextBox();
             this.ChrtFrecuencias = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -62,14 +57,9 @@
             this.lblDistribucionFrecuencias = new System.Windows.Forms.Label();
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Intervalo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FrecEsperada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FrecObs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChiCuad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnLimpiar = new System.Windows.Forms.Button();
             this.BtnGenerar = new System.Windows.Forms.Button();
-            this.TxtNivelConfianza = new System.Windows.Forms.TextBox();
-            this.txtResultadoChi = new System.Windows.Forms.TextBox();
+            this.TxtResultadoChi = new System.Windows.Forms.TextBox();
             this.TxtValorTabla = new System.Windows.Forms.TextBox();
             this.TxtSumatoriaChi = new System.Windows.Forms.TextBox();
             this.BtnVerificacion = new System.Windows.Forms.Button();
@@ -77,6 +67,16 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.TxtCotaInf = new System.Windows.Forms.MaskedTextBox();
+            this.TxtCotaSup = new System.Windows.Forms.MaskedTextBox();
+            this.TxtMedia = new System.Windows.Forms.MaskedTextBox();
+            this.TxtDesv = new System.Windows.Forms.MaskedTextBox();
+            this.TxtLambda = new System.Windows.Forms.MaskedTextBox();
+            this.TxtNivelConfianza = new System.Windows.Forms.TextBox();
+            this.Intervalo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FrecEsperada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FrecObs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChiCuad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChrtFrecuencias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -129,63 +129,63 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.RbInt20);
+            this.groupBox1.Controls.Add(this.RbInt15);
+            this.groupBox1.Controls.Add(this.RbInt10);
+            this.groupBox1.Controls.Add(this.RbInt5);
             this.groupBox1.Location = new System.Drawing.Point(661, 344);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(149, 35);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // radioButton4
+            // RbInt20
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(111, 15);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(37, 19);
-            this.radioButton4.TabIndex = 6;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "20";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.RbInt20.AutoSize = true;
+            this.RbInt20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RbInt20.Location = new System.Drawing.Point(111, 15);
+            this.RbInt20.Name = "RbInt20";
+            this.RbInt20.Size = new System.Drawing.Size(37, 19);
+            this.RbInt20.TabIndex = 6;
+            this.RbInt20.TabStop = true;
+            this.RbInt20.Text = "20";
+            this.RbInt20.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // RbInt15
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(74, 15);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(37, 19);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "15";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.RbInt15.AutoSize = true;
+            this.RbInt15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RbInt15.Location = new System.Drawing.Point(74, 15);
+            this.RbInt15.Name = "RbInt15";
+            this.RbInt15.Size = new System.Drawing.Size(37, 19);
+            this.RbInt15.TabIndex = 5;
+            this.RbInt15.TabStop = true;
+            this.RbInt15.Text = "15";
+            this.RbInt15.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // RbInt10
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(37, 15);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(37, 19);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "10";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.RbInt10.AutoSize = true;
+            this.RbInt10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RbInt10.Location = new System.Drawing.Point(37, 15);
+            this.RbInt10.Name = "RbInt10";
+            this.RbInt10.Size = new System.Drawing.Size(37, 19);
+            this.RbInt10.TabIndex = 4;
+            this.RbInt10.TabStop = true;
+            this.RbInt10.Text = "10";
+            this.RbInt10.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // RbInt5
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(5, 15);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(31, 19);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "5";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RbInt5.AutoSize = true;
+            this.RbInt5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RbInt5.Location = new System.Drawing.Point(5, 15);
+            this.RbInt5.Name = "RbInt5";
+            this.RbInt5.Size = new System.Drawing.Size(31, 19);
+            this.RbInt5.TabIndex = 3;
+            this.RbInt5.TabStop = true;
+            this.RbInt5.Text = "5";
+            this.RbInt5.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -217,24 +217,6 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Cota inferior (a)";
             // 
-            // TxtCotaSup
-            // 
-            this.TxtCotaSup.Enabled = false;
-            this.TxtCotaSup.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtCotaSup.Location = new System.Drawing.Point(126, 439);
-            this.TxtCotaSup.Name = "TxtCotaSup";
-            this.TxtCotaSup.Size = new System.Drawing.Size(86, 25);
-            this.TxtCotaSup.TabIndex = 5;
-            // 
-            // TxtCotaInf
-            // 
-            this.TxtCotaInf.Enabled = false;
-            this.TxtCotaInf.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.TxtCotaInf.Location = new System.Drawing.Point(126, 412);
-            this.TxtCotaInf.Name = "TxtCotaInf";
-            this.TxtCotaInf.Size = new System.Drawing.Size(86, 25);
-            this.TxtCotaInf.TabIndex = 5;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -244,15 +226,6 @@
             this.label6.Size = new System.Drawing.Size(45, 17);
             this.label6.TabIndex = 3;
             this.label6.Text = "Media";
-            // 
-            // TxtMedia
-            // 
-            this.TxtMedia.Enabled = false;
-            this.TxtMedia.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtMedia.Location = new System.Drawing.Point(294, 412);
-            this.TxtMedia.Name = "TxtMedia";
-            this.TxtMedia.Size = new System.Drawing.Size(86, 25);
-            this.TxtMedia.TabIndex = 5;
             // 
             // label7
             // 
@@ -264,15 +237,6 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Desviación";
             // 
-            // TxtDesv
-            // 
-            this.TxtDesv.Enabled = false;
-            this.TxtDesv.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtDesv.Location = new System.Drawing.Point(294, 439);
-            this.TxtDesv.Name = "TxtDesv";
-            this.TxtDesv.Size = new System.Drawing.Size(86, 25);
-            this.TxtDesv.TabIndex = 5;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -282,15 +246,6 @@
             this.label8.Size = new System.Drawing.Size(55, 17);
             this.label8.TabIndex = 3;
             this.label8.Text = "Lambda";
-            // 
-            // TxtLambda
-            // 
-            this.TxtLambda.Enabled = false;
-            this.TxtLambda.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtLambda.Location = new System.Drawing.Point(447, 412);
-            this.TxtLambda.Name = "TxtLambda";
-            this.TxtLambda.Size = new System.Drawing.Size(86, 25);
-            this.TxtLambda.TabIndex = 5;
             // 
             // ChrtFrecuencias
             // 
@@ -407,49 +362,22 @@
             this.Valor.ReadOnly = true;
             this.Valor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // Intervalo
-            // 
-            this.Intervalo.HeaderText = "Intervalo";
-            this.Intervalo.Name = "Intervalo";
-            this.Intervalo.ReadOnly = true;
-            this.Intervalo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // FrecEsperada
-            // 
-            this.FrecEsperada.HeaderText = "Frec. Esp.";
-            this.FrecEsperada.Name = "FrecEsperada";
-            this.FrecEsperada.ReadOnly = true;
-            this.FrecEsperada.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // FrecObs
-            // 
-            this.FrecObs.HeaderText = "Frec. Obs.";
-            this.FrecObs.Name = "FrecObs";
-            this.FrecObs.ReadOnly = true;
-            this.FrecObs.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ChiCuad
-            // 
-            this.ChiCuad.HeaderText = "Chi. Cuad.";
-            this.ChiCuad.Name = "ChiCuad";
-            this.ChiCuad.ReadOnly = true;
-            this.ChiCuad.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // BtnLimpiar
             // 
             this.BtnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLimpiar.Location = new System.Drawing.Point(582, 447);
+            this.BtnLimpiar.Location = new System.Drawing.Point(610, 447);
             this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnLimpiar.Name = "BtnLimpiar";
             this.BtnLimpiar.Size = new System.Drawing.Size(162, 26);
             this.BtnLimpiar.TabIndex = 27;
             this.BtnLimpiar.Text = "LIMPIAR";
             this.BtnLimpiar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
             // 
             // BtnGenerar
             // 
             this.BtnGenerar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGenerar.Location = new System.Drawing.Point(582, 399);
+            this.BtnGenerar.Location = new System.Drawing.Point(610, 399);
             this.BtnGenerar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGenerar.Name = "BtnGenerar";
             this.BtnGenerar.Size = new System.Drawing.Size(162, 44);
@@ -457,26 +385,16 @@
             this.BtnGenerar.Text = "GENERAR DISTRIBUCIÓN";
             this.BtnGenerar.UseVisualStyleBackColor = true;
             // 
-            // TxtNivelConfianza
+            // TxtResultadoChi
             // 
-            this.TxtNivelConfianza.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNivelConfianza.Location = new System.Drawing.Point(1026, 344);
-            this.TxtNivelConfianza.Margin = new System.Windows.Forms.Padding(2);
-            this.TxtNivelConfianza.MaxLength = 8;
-            this.TxtNivelConfianza.Name = "TxtNivelConfianza";
-            this.TxtNivelConfianza.Size = new System.Drawing.Size(121, 25);
-            this.TxtNivelConfianza.TabIndex = 35;
-            this.TxtNivelConfianza.Text = "0.05";
-            // 
-            // txtResultadoChi
-            // 
-            this.txtResultadoChi.Enabled = false;
-            this.txtResultadoChi.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultadoChi.Location = new System.Drawing.Point(1026, 460);
-            this.txtResultadoChi.Margin = new System.Windows.Forms.Padding(2);
-            this.txtResultadoChi.Name = "txtResultadoChi";
-            this.txtResultadoChi.Size = new System.Drawing.Size(121, 25);
-            this.txtResultadoChi.TabIndex = 40;
+            this.TxtResultadoChi.Enabled = false;
+            this.TxtResultadoChi.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtResultadoChi.Location = new System.Drawing.Point(1026, 460);
+            this.TxtResultadoChi.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtResultadoChi.Name = "TxtResultadoChi";
+            this.TxtResultadoChi.ReadOnly = true;
+            this.TxtResultadoChi.Size = new System.Drawing.Size(121, 25);
+            this.TxtResultadoChi.TabIndex = 40;
             // 
             // TxtValorTabla
             // 
@@ -485,6 +403,7 @@
             this.TxtValorTabla.Location = new System.Drawing.Point(1026, 402);
             this.TxtValorTabla.Margin = new System.Windows.Forms.Padding(2);
             this.TxtValorTabla.Name = "TxtValorTabla";
+            this.TxtValorTabla.ReadOnly = true;
             this.TxtValorTabla.Size = new System.Drawing.Size(121, 25);
             this.TxtValorTabla.TabIndex = 41;
             // 
@@ -495,6 +414,7 @@
             this.TxtSumatoriaChi.Location = new System.Drawing.Point(1026, 373);
             this.TxtSumatoriaChi.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSumatoriaChi.Name = "TxtSumatoriaChi";
+            this.TxtSumatoriaChi.ReadOnly = true;
             this.TxtSumatoriaChi.Size = new System.Drawing.Size(121, 25);
             this.TxtSumatoriaChi.TabIndex = 38;
             // 
@@ -549,18 +469,112 @@
             this.label12.TabIndex = 47;
             this.label12.Text = "Resultado";
             // 
+            // TxtCotaInf
+            // 
+            this.TxtCotaInf.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.TxtCotaInf.Location = new System.Drawing.Point(126, 412);
+            this.TxtCotaInf.Mask = "0000000000";
+            this.TxtCotaInf.Name = "TxtCotaInf";
+            this.TxtCotaInf.Size = new System.Drawing.Size(86, 25);
+            this.TxtCotaInf.TabIndex = 48;
+            // 
+            // TxtCotaSup
+            // 
+            this.TxtCotaSup.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.TxtCotaSup.Location = new System.Drawing.Point(126, 439);
+            this.TxtCotaSup.Mask = "0000000000";
+            this.TxtCotaSup.Name = "TxtCotaSup";
+            this.TxtCotaSup.Size = new System.Drawing.Size(86, 25);
+            this.TxtCotaSup.TabIndex = 49;
+            // 
+            // TxtMedia
+            // 
+            this.TxtMedia.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.TxtMedia.Location = new System.Drawing.Point(294, 409);
+            this.TxtMedia.Mask = "0000000000";
+            this.TxtMedia.Name = "TxtMedia";
+            this.TxtMedia.Size = new System.Drawing.Size(86, 25);
+            this.TxtMedia.TabIndex = 50;
+            // 
+            // TxtDesv
+            // 
+            this.TxtDesv.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.TxtDesv.Location = new System.Drawing.Point(294, 436);
+            this.TxtDesv.Mask = "0000000000";
+            this.TxtDesv.Name = "TxtDesv";
+            this.TxtDesv.Size = new System.Drawing.Size(86, 25);
+            this.TxtDesv.TabIndex = 51;
+            // 
+            // TxtLambda
+            // 
+            this.TxtLambda.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.TxtLambda.Location = new System.Drawing.Point(447, 409);
+            this.TxtLambda.Mask = "0000000000";
+            this.TxtLambda.Name = "TxtLambda";
+            this.TxtLambda.Size = new System.Drawing.Size(86, 25);
+            this.TxtLambda.TabIndex = 52;
+            // 
+            // TxtNivelConfianza
+            // 
+            this.TxtNivelConfianza.Enabled = false;
+            this.TxtNivelConfianza.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNivelConfianza.Location = new System.Drawing.Point(1026, 344);
+            this.TxtNivelConfianza.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtNivelConfianza.Name = "TxtNivelConfianza";
+            this.TxtNivelConfianza.ReadOnly = true;
+            this.TxtNivelConfianza.Size = new System.Drawing.Size(121, 25);
+            this.TxtNivelConfianza.TabIndex = 53;
+            this.TxtNivelConfianza.Text = "0.05";
+            // 
+            // Intervalo
+            // 
+            this.Intervalo.HeaderText = "Intervalo";
+            this.Intervalo.Name = "Intervalo";
+            this.Intervalo.ReadOnly = true;
+            this.Intervalo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Intervalo.Width = 120;
+            // 
+            // FrecEsperada
+            // 
+            this.FrecEsperada.HeaderText = "Frec. Esp.";
+            this.FrecEsperada.Name = "FrecEsperada";
+            this.FrecEsperada.ReadOnly = true;
+            this.FrecEsperada.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FrecEsperada.Width = 80;
+            // 
+            // FrecObs
+            // 
+            this.FrecObs.HeaderText = "Frec. Obs.";
+            this.FrecObs.Name = "FrecObs";
+            this.FrecObs.ReadOnly = true;
+            this.FrecObs.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FrecObs.Width = 80;
+            // 
+            // ChiCuad
+            // 
+            this.ChiCuad.HeaderText = "Chi. Cuad.";
+            this.ChiCuad.Name = "ChiCuad";
+            this.ChiCuad.ReadOnly = true;
+            this.ChiCuad.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ChiCuad.Width = 120;
+            // 
             // FrmSimulador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1171, 496);
+            this.Controls.Add(this.TxtNivelConfianza);
+            this.Controls.Add(this.TxtLambda);
+            this.Controls.Add(this.TxtDesv);
+            this.Controls.Add(this.TxtMedia);
+            this.Controls.Add(this.TxtCotaSup);
+            this.Controls.Add(this.TxtCotaInf);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.TxtNivelConfianza);
-            this.Controls.Add(this.txtResultadoChi);
+            this.Controls.Add(this.TxtResultadoChi);
             this.Controls.Add(this.TxtValorTabla);
             this.Controls.Add(this.TxtSumatoriaChi);
             this.Controls.Add(this.BtnVerificacion);
@@ -571,14 +585,9 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ChrtFrecuencias);
-            this.Controls.Add(this.TxtLambda);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.TxtDesv);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.TxtMedia);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.TxtCotaInf);
-            this.Controls.Add(this.TxtCotaSup);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -607,21 +616,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MaskedTextBox TxtCantNums;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton RbInt20;
+        private System.Windows.Forms.RadioButton RbInt15;
+        private System.Windows.Forms.RadioButton RbInt10;
+        private System.Windows.Forms.RadioButton RbInt5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TxtCotaSup;
-        private System.Windows.Forms.TextBox TxtCotaInf;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox TxtMedia;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox TxtDesv;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox TxtLambda;
         private System.Windows.Forms.DataVisualization.Charting.Chart ChrtFrecuencias;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -629,14 +633,9 @@
         private System.Windows.Forms.Label lblDistribucionFrecuencias;
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Intervalo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FrecEsperada;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FrecObs;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ChiCuad;
         private System.Windows.Forms.Button BtnLimpiar;
         private System.Windows.Forms.Button BtnGenerar;
-        private System.Windows.Forms.TextBox TxtNivelConfianza;
-        private System.Windows.Forms.TextBox txtResultadoChi;
+        private System.Windows.Forms.TextBox TxtResultadoChi;
         private System.Windows.Forms.TextBox TxtValorTabla;
         private System.Windows.Forms.TextBox TxtSumatoriaChi;
         private System.Windows.Forms.Button BtnVerificacion;
@@ -644,5 +643,15 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.MaskedTextBox TxtCotaInf;
+        private System.Windows.Forms.MaskedTextBox TxtCotaSup;
+        private System.Windows.Forms.MaskedTextBox TxtMedia;
+        private System.Windows.Forms.MaskedTextBox TxtDesv;
+        private System.Windows.Forms.MaskedTextBox TxtLambda;
+        private System.Windows.Forms.TextBox TxtNivelConfianza;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Intervalo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FrecEsperada;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FrecObs;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ChiCuad;
     }
 }

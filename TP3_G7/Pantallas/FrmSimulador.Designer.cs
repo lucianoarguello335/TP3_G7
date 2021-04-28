@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.CmbMetodo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,8 +51,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.ChrtFrecuencias = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.DgvValores = new System.Windows.Forms.DataGridView();
+            this.DgvFrecuencias = new System.Windows.Forms.DataGridView();
             this.lblGrillaValores = new System.Windows.Forms.Label();
             this.lblDistribucionFrecuencias = new System.Windows.Forms.Label();
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,8 +79,8 @@
             this.ChiCuad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChrtFrecuencias)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvValores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvFrecuencias)).BeginInit();
             this.SuspendLayout();
             // 
             // CmbMetodo
@@ -253,75 +253,75 @@
             this.ChrtFrecuencias.BorderlineColor = System.Drawing.Color.Black;
             this.ChrtFrecuencias.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
             this.ChrtFrecuencias.BorderlineWidth = 2;
-            chartArea1.Name = "ChartArea1";
-            this.ChrtFrecuencias.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.ChrtFrecuencias.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.ChrtFrecuencias.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.ChrtFrecuencias.Legends.Add(legend2);
             this.ChrtFrecuencias.Location = new System.Drawing.Point(12, 29);
             this.ChrtFrecuencias.Name = "ChrtFrecuencias";
             this.ChrtFrecuencias.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.ChrtFrecuencias.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.Tomato,
         System.Drawing.Color.Gold};
-            series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.Legend = "Legend1";
-            series1.Name = "FE";
-            series2.ChartArea = "ChartArea1";
-            series2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.Legend = "Legend1";
-            series2.Name = "FO";
-            this.ChrtFrecuencias.Series.Add(series1);
-            this.ChrtFrecuencias.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series3.Legend = "Legend1";
+            series3.Name = "FE";
+            series4.ChartArea = "ChartArea1";
+            series4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series4.Legend = "Legend1";
+            series4.Name = "FO";
+            this.ChrtFrecuencias.Series.Add(series3);
+            this.ChrtFrecuencias.Series.Add(series4);
             this.ChrtFrecuencias.Size = new System.Drawing.Size(535, 300);
             this.ChrtFrecuencias.TabIndex = 6;
             this.ChrtFrecuencias.Text = "ChrtFrecuencias";
-            title1.BackColor = System.Drawing.Color.Bisque;
-            title1.BorderColor = System.Drawing.Color.Transparent;
-            title1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "Titulo";
-            title1.Text = "Gráfico de frecuencias";
-            title2.BackColor = System.Drawing.Color.Bisque;
-            title2.BorderColor = System.Drawing.Color.Transparent;
-            title2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
-            title2.Name = "Valores";
-            title2.Text = "Valores";
-            title3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            title3.Name = "Intervalos";
-            title3.Text = "Intervalos";
-            this.ChrtFrecuencias.Titles.Add(title1);
-            this.ChrtFrecuencias.Titles.Add(title2);
-            this.ChrtFrecuencias.Titles.Add(title3);
+            title4.BackColor = System.Drawing.Color.Bisque;
+            title4.BorderColor = System.Drawing.Color.Transparent;
+            title4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title4.Name = "Titulo";
+            title4.Text = "Gráfico de frecuencias";
+            title5.BackColor = System.Drawing.Color.Bisque;
+            title5.BorderColor = System.Drawing.Color.Transparent;
+            title5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title5.Name = "Valores";
+            title5.Text = "Valores";
+            title6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            title6.Name = "Intervalos";
+            title6.Text = "Intervalos";
+            this.ChrtFrecuencias.Titles.Add(title4);
+            this.ChrtFrecuencias.Titles.Add(title5);
+            this.ChrtFrecuencias.Titles.Add(title6);
             // 
-            // dataGridView1
+            // DgvValores
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgvValores.AllowUserToAddRows = false;
+            this.DgvValores.AllowUserToDeleteRows = false;
+            this.DgvValores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvValores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Numero,
             this.Valor});
-            this.dataGridView1.Location = new System.Drawing.Point(554, 30);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(181, 299);
-            this.dataGridView1.TabIndex = 7;
+            this.DgvValores.Location = new System.Drawing.Point(554, 30);
+            this.DgvValores.Name = "DgvValores";
+            this.DgvValores.ReadOnly = true;
+            this.DgvValores.Size = new System.Drawing.Size(181, 299);
+            this.DgvValores.TabIndex = 7;
             // 
-            // dataGridView2
+            // DgvFrecuencias
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgvFrecuencias.AllowUserToAddRows = false;
+            this.DgvFrecuencias.AllowUserToDeleteRows = false;
+            this.DgvFrecuencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvFrecuencias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Intervalo,
             this.FrecEsperada,
             this.FrecObs,
             this.ChiCuad});
-            this.dataGridView2.Location = new System.Drawing.Point(741, 29);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(418, 299);
-            this.dataGridView2.TabIndex = 8;
+            this.DgvFrecuencias.Location = new System.Drawing.Point(741, 29);
+            this.DgvFrecuencias.Name = "DgvFrecuencias";
+            this.DgvFrecuencias.ReadOnly = true;
+            this.DgvFrecuencias.Size = new System.Drawing.Size(418, 299);
+            this.DgvFrecuencias.TabIndex = 8;
             // 
             // lblGrillaValores
             // 
@@ -338,7 +338,7 @@
             // 
             this.lblDistribucionFrecuencias.AutoSize = true;
             this.lblDistribucionFrecuencias.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistribucionFrecuencias.Location = new System.Drawing.Point(803, 7);
+            this.lblDistribucionFrecuencias.Location = new System.Drawing.Point(865, 6);
             this.lblDistribucionFrecuencias.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDistribucionFrecuencias.Name = "lblDistribucionFrecuencias";
             this.lblDistribucionFrecuencias.Size = new System.Drawing.Size(177, 20);
@@ -384,6 +384,7 @@
             this.BtnGenerar.TabIndex = 26;
             this.BtnGenerar.Text = "GENERAR DISTRIBUCIÓN";
             this.BtnGenerar.UseVisualStyleBackColor = true;
+            this.BtnGenerar.Click += new System.EventHandler(this.BtnGenerar_Click);
             // 
             // TxtResultadoChi
             // 
@@ -582,8 +583,8 @@
             this.Controls.Add(this.BtnGenerar);
             this.Controls.Add(this.lblDistribucionFrecuencias);
             this.Controls.Add(this.lblGrillaValores);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DgvFrecuencias);
+            this.Controls.Add(this.DgvValores);
             this.Controls.Add(this.ChrtFrecuencias);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -603,8 +604,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChrtFrecuencias)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvValores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvFrecuencias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -627,8 +628,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataVisualization.Charting.Chart ChrtFrecuencias;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView DgvValores;
+        private System.Windows.Forms.DataGridView DgvFrecuencias;
         private System.Windows.Forms.Label lblGrillaValores;
         private System.Windows.Forms.Label lblDistribucionFrecuencias;
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
